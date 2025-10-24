@@ -1,0 +1,116 @@
+
+.container button {
+  appearance: button;
+  background-color: #0f633c;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 10px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  /* width: 100%; */
+  margin-bottom: 0px;
+}
+
+.container button:after {
+  background-clip: padding-box;
+  background-color: #198754;
+  border: solid transparent;
+  border-radius: 2rem;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.container button:main,
+.container button:focus {
+  user-select: auto;
+}
+
+.container button:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+
+.container button:disabled {
+  cursor: auto;
+}
+
+
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(6, 57, 88);
+  color: #0008;
+}
+
+#app {
+  margin: 50px auto;
+  max-width: 500px;
+  text-align: center;
+  background: #fff9;
+  padding: 20px 30px 30px 30px;
+  border-radius: 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 50px;
+}
+
+input {
+  width: 100px;
+  padding: 1px;
+  text-align: center;
+  border: 0;
+  font-size: 30px;
+  margin: 0 10px;
+  background: transparent;
+  border-bottom: 1px solid #999;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 3px solid #000 !important;
+}
+
+@media (min-width: 768px) {
+  #app {
+    position: absolute;
+    margin: auto !important;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
